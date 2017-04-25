@@ -1,0 +1,15 @@
+#wrapper {
+    background-color: #715b87;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #eebe8d;
+}
+
+#word {
+    
+}
+
+#address {
+    text-align: right;
+}
