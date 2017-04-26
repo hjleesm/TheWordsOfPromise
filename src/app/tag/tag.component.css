@@ -1,8 +1,9 @@
 #tag {
-    background-color: #966c7d;
-    border-radius: 5px;
-    display:inline-block;
-    color: #eebe8d;
+    background-color: #f2eedb;
+    color: #ba7d3b;
     padding: 5px;
     margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px #666666;
+    display: inline-block;
 }

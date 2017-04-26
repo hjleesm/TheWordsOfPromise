@@ -1,1 +1,3 @@
-<app-tag *ngFor="let tag of tags" [text]="tag.text" (outputProperty)="onClickTag($event)"></app-tag>
+<div id="tagList">
+    <app-tag *ngFor="let tag of tags" [text]="tag.text" (outputProperty)="onClickTag($event)"></app-tag>
+</div>

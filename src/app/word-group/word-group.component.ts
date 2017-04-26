@@ -8,12 +8,14 @@ import { WordService, Word} from '../word.service';
 })
 export class WordGroupComponent implements OnInit {
   words: Word[];
+  isShowMain:boolean = true;
 
   constructor(private wordService: WordService) {
     
   }
 
   updateWords(tag:string) {
+    this.isShowMain = false;
     this.words = this.wordService.requesetWord(tag);
   }
 

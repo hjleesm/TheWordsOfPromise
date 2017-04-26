@@ -1,12 +1,14 @@
-<div id="tagList">
-  <h3>The Words Of Promise</h3>
-  <h2>Tags</h2>
-  <app-tag-group (outputProperty)="onClickTag($event)"></app-tag-group>
-</div>
-<div id="contents">
-  <app-main></app-main>
-  <app-word-group></app-word-group>
-</div>
-<div id="ads">
-  ad view
+<div id="container" [style.width.px]="width" [style.height.px]="height">
+  <div id="logo">
+    <h3>The Words Of Promise</h3>
+  </div>
+  <div id="tagList">
+    <app-tag-group (outputProperty)="onClickTag($event)"></app-tag-group>
+  </div>
+  <div id="contents">
+    <app-word-group></app-word-group>
+  </div>
+  <div id="ads">
+    ad view
+  </div>
 </div>
