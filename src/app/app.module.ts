@@ -10,6 +10,8 @@ import { TagGroupComponent } from './tag-group/tag-group.component';
 import { WordComponent } from './word/word.component';
 import { WordGroupComponent } from './word-group/word-group.component';
 import { WordService } from './word.service';
+import { BibleService } from './bible.service';
+import { SubmitComponent } from './submit/submit.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,14 @@ import { WordService } from './word.service';
     TagGroupComponent,
     WordComponent,
     WordGroupComponent,
+    SubmitComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [WordService],
+  providers: [WordService, BibleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

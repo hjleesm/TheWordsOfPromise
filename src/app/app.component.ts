@@ -28,4 +28,12 @@ export class AppComponent {
   onClickTag(tag:string) {
     this.wordGroupComponent.updateWords(tag);
   }
+
+  onClickSubmit() {
+    this.wordGroupComponent.onClickSubmit();
+  }
+
+  onClickLogo() {
+    this.wordGroupComponent.onClickLogo();
+  }
 }

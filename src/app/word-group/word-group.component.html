@@ -1,2 +1,3 @@
-<app-main *ngIf="isShowMain==true"></app-main>
-<app-word *ngFor="let word of words" [word]="word.word" [address]="word.address"></app-word>
+<app-main *ngIf="showCompIdx==1"></app-main>
+<app-word *ngFor="let word of words" [word]="word.content" [address]="word.chapter"></app-word>
+<app-submit *ngIf="showCompIdx==3"></app-submit>
